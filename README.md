@@ -1,34 +1,37 @@
-# airline-reservation-project-cpp
-A comprehensive C++ Airline Reservation System featuring binary file handling, administrative controls, and automated seat inventory management.
+# Airline Reservation System (C++)
 
-Airline Reservation System (C++)
-A high-performance console application for managing airline logistics, passenger records, and seat inventories. Built with a focus on Object-Oriented Programming and Data Persistence, it provides a complete backend simulation for airline operations.
+A comprehensive console-based application designed to manage airline logistics, passenger registration, and seat inventories. This project demonstrates the practical application of **Object-Oriented Programming (OOP)**, **File Handling**, and **Multi-level Inheritance** in C++.
 
-🚀 Key Features
-Booking Engine: Features automated unique ID generation, real-time fare calculation, and input validation (Regex-style checks for email/phone).
+## 🚀 Features
 
-Inventory Management: Dynamic seat tracking across Economy, Business, and Premium classes. Includes auto-increment/decrement logic for cancellations and bookings.
+### 1. Security & Authentication
+* **User Registration:** Allows new users to create accounts; credentials are saved in individual text files for basic persistence.
+* **Login System:** Validates user credentials against stored records before granting access to the system.
 
-Admin Portal: Password-protected dashboard to manage flight schedules, update global pricing, and monitor passenger manifests.
+### 2. Passenger & Flight Management
+* **Customer Profiling:** Collects and displays detailed passenger data, including ID, contact information, and address.
+* **International Destinations:** Offers flight registration for 6 major countries: **Dubai, Canada, UK, USA, Australia, and Turkey**.
+* **Tiered Service Classes:** Supports **Economy**, **Business**, and **First Class** options with distinct schedules and pricing.
+* **Interactive Seat Booking:** A visual 8x8 grid system to view, select, and book specific seats (marked with 'X' when occupied).
 
-Data Persistence: CRUD operations performed directly on binary files (.dat) for high-speed, non-volatile storage.
+### 3. Logic & Data Handling
+* **External Schedule Integration:** Reads flight schedules (ID, Origin, Destination, Time) from an external `flights.txt` file.
+* **Automated Ticketing:** Generates a professional bill/voucher (`voucher.txt`) and allows users to view it directly in the console.
+* **Guidelines:** Provides a built-in passenger manual for check-in procedures and baggage policies.
 
-Visual Tickets: Generates formatted digital boarding passes with seat assignments and flight metadata.
+## 🛠 Technical Stack
 
-🛠 Technical Stack
-Language: C++ (Standard Library).
+* **Language:** C++
+* **Programming Paradigm:** Object-Oriented Programming (OOP)
+    * **Inheritance:** The `ticket` class utilizes multiple inheritance from `registration` and `detail`.
+    * **Encapsulation:** Data members and methods are organized within distinct class scopes.
+* **Persistence:** Text-based file handling using `fstream` for account management and billing.
+* **Environment:** Compatible with Windows (uses `system("cls")` and `system("pause")`).
 
-Architecture: Class-based Encapsulation (OOP).
+## 📁 File Structure
 
-File Handling: Binary I/O via fstream for efficient record serialization.
+* `main.cpp`: The core source code.
+* `flights.txt`: Required for displaying the flight schedule (Option 5).
+* `voucher.txt`: Generated dynamically upon ticket confirmation.
+* `[username].txt`: Generated dynamically for user authentication.
 
-Environment: Optimized for Linux/POSIX (utilizes system-level file management and terminal control).
-
-💡 Core Competencies Demonstrated
-Direct Disk Access: Writing and reading class objects as binary blocks to minimize I/O overhead.
-
-State Management: Synchronizing seat availability between passenger records and flight databases.
-
-Memory Management: Use of pointers and cstring for low-level data manipulation.
-
-Input Sanitization: Robust error-handling loops using errno and ASCII validation.
