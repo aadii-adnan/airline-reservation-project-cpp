@@ -35,3 +35,12 @@ A comprehensive console-based application designed to manage airline logistics, 
 * `voucher.txt`: Generated dynamically upon ticket confirmation.
 * `[username].txt`: Generated dynamically for user authentication.
 
+## 👥 Contributors
+
+This project was a collaborative effort. Special thanks to:
+
+* **Noor Fatima** ([@noorfatimaniac-code][(https://github.com/noorfatimaniac-code)]) 
+* **Tahira Hafeez** ([@Tahira-Hafeez][(https://github.com/Tahira-Hafeez)])
+
+**Developed for Semester Project - COMSATS University Islamabad**
+
