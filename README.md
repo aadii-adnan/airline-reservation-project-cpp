@@ -6,7 +6,7 @@ A comprehensive console-based application designed to manage airline logistics, 
 
 ### 1. Security & Authentication
 * **User Registration:** Allows new users to create accounts; credentials are saved in individual text files for basic persistence.
-* **Login System:** Validates user credentials against stored records before granting access to the system.
+* **Login System:** Validate user credentials against stored records before granting access to the system.
 
 ### 2. Passenger & Flight Management
 * **Customer Profiling:** Collects and displays detailed passenger data, including ID, contact information, and address.
